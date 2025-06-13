@@ -1,0 +1,5 @@
+{
+  "TransparentProxyWithInitModule#MyLogic": "0x4a9FF96BCdD35e8407A66e90E907dA65D8973d0e",
+  "TransparentProxyWithInitModule#ProxyAdmin": "0xA86B67dd290ccc6C75535a872A3167296753dDE3",
+  "TransparentProxyWithInitModule#TransparentUpgradeableProxy": "0x5D56658Ee65D6CeeA6C8533A81f6f90Bd030DF0f"
+}
