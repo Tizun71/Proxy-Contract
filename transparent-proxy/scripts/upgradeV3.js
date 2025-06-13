@@ -10,13 +10,13 @@ async function main() {
   const proxyAdminAddress = "0x14d9A7656aFD17375c1D0ACF98aDbb6BDC4B08b2";
 
   // Deploy new implementation
-  const LogicV2 = await ethers.getContractFactory("MyLogicV2");
-  const logicV2 = await LogicV2.deploy();
-  await logicV2.waitForDeployment();
-  const newImplAddress = logicV2.target;
+  const LogicV3 = await ethers.getContractFactory("MyLogicV3");
+  const logicV3 = await LogicV3.deploy();
+  await logicV3.waitForDeployment();
+  const newImplAddress = logicV3.target;
 
-  const encodedFunctionCall = logicV2.interface.encodeFunctionData(
-    "getNumber",
+  const encodedFunctionCall = logicV3.interface.encodeFunctionData(
+    "getNewNumber",
     []
   );
 

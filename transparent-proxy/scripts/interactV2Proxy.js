@@ -7,13 +7,11 @@ async function main() {
   // Proxy Admin Address: 0x3f866e454F82F885e6d967fE1cC4b89B2f778341
 
   const MyLogic = await ethers.getContractFactory("MyLogicV2");
-  const myLogic = MyLogic.attach("0xDb88c49a6C4f107c2Cd1Bc4026297753255C455D");
+  const myLogic = MyLogic.attach("0x8444e6877d262E8A9A724C13636B0D57b635f46E");
 
-  // Interact with V2 contract through Proxy with getNumber 
+  // Interact with V2 contract through Proxy with getNumber
   const number = await myLogic.getNumber();
   console.log("number:", number);
-
-
 }
 
 main().catch((err) => {
